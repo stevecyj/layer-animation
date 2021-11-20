@@ -1,0 +1,45 @@
+#page-home .home__landing .keyvisual .visual{
+    z-index: 2;
+}
+#page-home .home__landing .keyvisual .visual.visual1{
+    z-index: 1;
+}
+
+#page-home .home__landing .keyvisual .visual.visual1 .swiper-slide .image_mask{
+    position: relative; z-index: 2;
+}
+#page-home .home__landing .keyvisual .visual.visual1 .swiper-slide .slide_image{
+    position: absolute; z-index: 1; width: 74%; bottom: 9%; right: 3%;
+}
+
+
+
+#page-home #keyvisual-wrapper-left{
+    z-index: 2; position: relative;
+}
+
+#page-home #home__projects .slider__item .visuals .visual svg{
+    height: calc(100vh - 100px - 60px);
+    display: block; width: auto ; max-width: 100%;
+}
+#page-home #home__projects .slider__item .visuals .visual_1{
+    z-index: 2;
+}
+#page-home #home__projects .slider__item .visuals .visual_2{
+    z-index: 1;
+}
+#page-home #home__projects .slider__item .visuals .visual svg #svg_img{
+    height: 100%; width: auto;
+}
+
+@media only screen and (min-width : 1000px) and (max-width : 1200px) {
+    #page-home #home__projects .slider__item .visuals .visual_2{
+        left: -29px; top: -5px;
+    }
+}
+
+@media (max-width: 1023px){
+    #page-home #home__projects .slider__item .visuals .visual svg{
+        height: auto; min-height: 0;
+    }
+}
